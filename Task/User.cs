@@ -23,4 +23,12 @@ internal class User
         Phone = phone;
         BirthDate = birthDate;
     }
+
+
+    public override string ToString() =>
+        $@"{Name}
+{Surname}
+{Email}
+{Phone}
+{BirthDate.ToShortDateString()}";
 }
